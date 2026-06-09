@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Panel – Bangla-Viral-X
-</title>
+<title>Admin Panel – Bangla-Viral-X</title>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0d1117;--bg2:#161b22;--bg3:#1c2230;--bg4:#222d3e;--red:#e8192c;--red2:#ff3347;--gold:#ffd700;--green:#00c853;--blue:#1e88e5;--text:#f0f0f0;--text2:#8b949e;--border:#30363d;}
@@ -115,7 +114,7 @@ body{background:var(--bg);color:var(--text);font-family:'Hind Siliguri',sans-ser
 <!-- LOGIN -->
 <div id="loginPage">
   <div class="login-box">
-    <div class="login-logo">🎬 <span>BD</span> Video Hub</div>
+    <div class="login-logo">🎬 <span>Bangla</span>-Viral-X</div>
     <div class="login-sub">অ্যাডমিন প্যানেলে প্রবেশ করুন</div>
     <input type="password" class="form-input" id="loginPass" placeholder="পাসওয়ার্ড দিন" onkeydown="if(event.key==='Enter')doLogin()">
     <button class="login-btn" onclick="doLogin()">✓ লগইন করুন</button>
@@ -324,14 +323,14 @@ body{background:var(--bg);color:var(--text);font-family:'Hind Siliguri',sans-ser
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getDatabase, ref, onValue, set, remove, push } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
-const app = initializeApp({ databaseURL: "https://bd-video-hub4-default-rtdb.firebaseio.com" });
+const app = initializeApp({ databaseURL: "https://bangla-viral-x-default-rtdb.firebaseio.com" });
 const db = getDatabase(app);
 
 const DEFAULT_PASS = 'admin123';
 let posts = [], settings = {};
 
 // ===== AUTH =====
-function getPass(){ return localStorage.getItem('bdvh_pass') || DEFAULT_PASS; }
+function getPass(){ return localStorage.getItem('bvx_pass') || DEFAULT_PASS; }
 window.doLogin = () => {
   if(document.getElementById('loginPass').value === getPass()){
     document.getElementById('loginPage').style.display='none';
@@ -574,7 +573,7 @@ window.changePassword=()=>{
   if(curr!==getPass()){showToast('বর্তমান পাসওয়ার্ড ভুল!',true);return;}
   if(!nw||nw.length<4){showToast('কমপক্ষে ৪ অক্ষর দিন!',true);return;}
   if(nw!==conf){showToast('পাসওয়ার্ড মিলছে না!',true);return;}
-  localStorage.setItem('bdvh_pass',nw);
+  localStorage.setItem('bvx_pass',nw);
   showToast('✅ পাসওয়ার্ড পরিবর্তন হয়েছে!');
   ['currPass','newPass','confirmPass'].forEach(id=>document.getElementById(id).value='');
 };
