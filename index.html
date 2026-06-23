@@ -6,9 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bangla-Viral-X</title>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- ✅ ADSTERRA POPUNDER -->
-<script src="https://pl29857243.effectivecpmnetwork.com/68/39/93/6839935cbd23a023cb92bd95dfdd417e.js"></script>
 <style>
 :root{--bg:#0d1117;--bg2:#161b22;--bg3:#1c2230;--red:#e8192c;--red2:#ff3347;--gold:#ffd700;--green:#00c853;--blue:#1565c0;--text:#f0f0f0;--text2:#8b949e;--border:#30363d;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -103,21 +100,10 @@ header{background:var(--bg2);border-bottom:2px solid var(--red);padding:0 14px;d
 .ad-loader.show{display:flex;}
 .ad-spin{width:46px;height:46px;border:3px solid var(--border);border-top-color:var(--red);border-radius:50%;animation:spin .8s linear infinite;margin-bottom:14px;}
 .float-msg{position:fixed;bottom:90px;right:16px;width:48px;height:48px;background:linear-gradient(135deg,var(--red),var(--red2));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;cursor:pointer;box-shadow:0 4px 15px rgba(232,25,44,.5);z-index:99;}
-/* ✅ ADSTERRA NATIVE BANNER */
-.adsterra-native-wrap{width:100%;padding:10px 14px;background:var(--bg2);}
-.adsterra-native-label{font-size:10px;color:var(--text2);margin-bottom:6px;text-align:center;letter-spacing:.5px;}
-.native-ad-card{background:var(--bg3);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;gap:10px;align-items:center;padding:10px;}
-.native-ad-card img{width:80px;height:60px;object-fit:cover;border-radius:8px;flex-shrink:0;}
-.native-ad-info{flex:1;}
-.native-ad-info .nad-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px;line-height:1.35;}
-.native-ad-info .nad-desc{font-size:11px;color:var(--text2);line-height:1.3;}
-.native-ad-info .nad-btn{display:inline-block;margin-top:6px;background:var(--red);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:5px;}
-/* ✅ ADSTERRA SOCIAL BAR — fixed bottom area */
-#adsterra-socialbar-wrap{position:fixed;bottom:64px;left:0;right:0;z-index:98;}
 </style>
 </head>
 <body>
-<div class=>🔥 BANGLA-VIRAL-X — সেরা ভিডিও কালেকশন 🔥</div>
+<div class="top-banner">🔥 BANGLA-VIRAL-X — সেরা ভিডিও কালেকশন 🔥</div>
 <header>
   <div class="logo"><div class="logo-icon">🎬</div><span>Bangla</span>-Viral-X</div>
   <button class="search-btn" onclick="openSearch()">🔍 খুঁজুন</button>
@@ -209,16 +195,6 @@ onValue(ref(db,'posts'), snap => {
   renderAll();
 });
 
-// ✅ ADSTERRA NATIVE BANNER — প্রতি ৫টি সেকশনের পর ইনজেক্ট হবে
-function buildNativeBanner(){
-  return `<div class="adsterra-native-wrap">
-    <div class="">🔖 SPONSORED</div>
-    <!-- ✅ Adsterra Native Banner -->
-    <script async="async" data-cfasync="false" src="https://pl29857244.effectivecpmnetwork.com/5536b922895480e936b6cae85acb4a96/invoke.js"></script>
-<div id="container-5536b922895480e936b6cae85acb4a96"></div>
-  </div>`;
-}
-
 function renderAll() {
   const c = document.getElementById('mainContent');
   const active = posts.filter(p=>p.active!==false);
@@ -226,14 +202,10 @@ function renderAll() {
   const byDate={};
   active.forEach(p=>{ const k=p.date||'আজ'; if(!byDate[k])byDate[k]=[]; byDate[k].push(p); });
   let html='';
-  let sectionCount=0;
   Object.keys(byDate).forEach(date=>{
     const g=byDate[date];
     html+=`<div class="section-header"><span class="badge-num">${g.length}</span><span class="section-date">${date} • TODAY NEW</span></div>
     <div class="posts-scroll-wrap"><div class="posts-scroll">${g.map(buildSmallCard).join('')}</div></div>`;
-    sectionCount++;
-    // ✅ প্রতি ২টি সেকশনের পর Adsterra Native Banner
-    if(sectionCount % 2 === 0) html += buildNativeBanner();
   });
   const trending=active.filter(p=>p.trending);
   if(trending.length) html+=`<div class="trending-header"><h2>🔥 TRENDING NOW</h2></div><div class="trending-posts">${trending.map(buildTrendingCard).join('')}</div>`;
@@ -336,12 +308,8 @@ window.navFilter=(filter,navId)=>{
 window.scrollToTop=()=>window.scrollTo({top:0,behavior:'smooth'});
 window.openChatLink=()=>{ if(settings.chatLink) window.open(settings.chatLink,'_blank'); };
 </script>
-
-<!-- ✅ ADSTERRA SOCIAL BAR — আপনার Social Bar কোড এখানে বসান -->
-<div id="adsterra-socialbar-wrap">
-  <!-- ✅ Adsterra Social Bar -->
 </body>
- <script src="https://pl29857245.effectivecpmnetwork.com/ff/bf/d7/ffbfd723348c7fd50b2f2a0ba9a9d2ff.js"></script>
+  <script src="https://pl29857245.effectivecpmnetwork.com/ff/bf/d7/ffbfd723348c7fd50b2f2a0ba9a9d2ff.js"></script>
   <script async="async" data-cfasync="false" src="https://pl29857244.effectivecpmnetwork.com/5536b922895480e936b6cae85acb4a96/invoke.js"></script>
 <div id="container-5536b922895480e936b6cae85acb4a96"></div>
 </html>
